@@ -1,0 +1,20 @@
+{% extends "index.html" %} {% block content %}
+
+<div class="row">
+  <div class="col-3"></div>
+
+  <div class="col-6">
+    <div class="card border-secondary shadow-lg">
+      <div class="card-body">
+        <h4 class="card-title">Błędne logowanie</h4>
+        <hr />
+        Błędny login lub hasło. Próba: {{invalidTry}}
+        <a href="{% url 'loginPage' %}">Wróc do strony logowania</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-3"></div>
+</div>
+
+{% endblock content %}
